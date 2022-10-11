@@ -9,15 +9,21 @@ import Main from './Layout/Main';
 
 function App() {
     const router = createBrowserRouter([
+      
       {path: '/', element: <Main></Main>, errorElement: <ErrorPage></ErrorPage> , children: [
-        {path: '/', element: <Home></Home>},
-        {path: '/home', loader: () => {
+      {path: '/', element: <Home></Home>},
+      {path: '/home', loader: () => {
           return fetch('https://openapi.programming-hero.com/api/quiz')
        } , element: <Home></Home>},
-        {path: '/topics', element: <Topics></Topics>},
-        {path: '/statistics', element: <Statistics></Statistics>},
-        {path: '/blog', element: <Blog></Blog>},
-      ]}
+      {path: '/topics', element: <Topics></Topics>},
+      {path: '/statistics', element: <Statistics></Statistics>},
+      {path: '/blog', element: <Blog></Blog>},
+      {path: '/topics/:quizId', 
+       loader: ({params}) => {
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+       } ,
+       element: <Topics></Topics>}
+    ]}
     ])
   return (
     <div>
