@@ -1,0 +1,10 @@
+.active{
+    border-bottom: 2px solid white;
+    transition: all 0.3s;
+    color: indigo;
+}
+
+.navLinks{
+    margin: 0 15px;
+    text-align: center;
+}

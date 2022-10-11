@@ -1,0 +1,22 @@
+.header{
+
+}
+.headerThumnail{
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.headerImg{
+    transition: all 0.3s;
+    filter: brightness(0.5);
+}
+
+.headerImg:hover{
+    transform: scale(1.1);
+}
+
+.headertitle{
+    /* margin-top: -100px; */
+}
