@@ -2,7 +2,7 @@ import React from 'react';
 import Options from '../Options/Options';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Topic = ({allquestion}) => {
@@ -10,7 +10,8 @@ const Topic = ({allquestion}) => {
     const newQuestion = allquestion.question.split('<p>');
     
     const handleShowModal = () => {
-        toast('Correct answer is: ', `${correctAnswer}`)
+        const answer = allquestion.correctAnswer;
+        toast(`Correct answer is: ${answer}`)
     }
 
     return (
@@ -22,7 +23,6 @@ const Topic = ({allquestion}) => {
                  <button onClick={() => handleShowModal()} className='p-10'>
                     <EyeIcon className="h-6 w-6 text-blue-500"/>
                  </button>
-                 {/* <ToastContainer/> */}
                </div>
                 <div className='px-10 py-0 my-5'>
                     <ul className='list-decimal'>
