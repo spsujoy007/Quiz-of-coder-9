@@ -2,15 +2,14 @@ import React from 'react';
 import Options from '../Options/Options';
 
 const Topic = ({allquestion}) => {
-    console.log(allquestion);
-    const {total, name, question, options, id , correctAnswer } = allquestion;
-    console.log(allquestion)
+    const {options, correctAnswer } = allquestion;
+    const newQuestion = allquestion.question.split('<p>');
 
     return (
         <div className='bg-indigo-100 my-2 p-5 rounded-2xl'>
             <div className='text-center'>
-                <h1 className='text-3xl text-indigo-500'>{allquestion.question}</h1>
-                <div className='p-10'>
+                <h1 className='text-3xl text-indigo-500'>{newQuestion}</h1>
+                <div className='p-10 my-5'>
                     <ul className='list-decimal'>
  
                         {
