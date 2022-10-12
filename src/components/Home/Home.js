@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import headerImg from "../../images/programmingEvulation.jpg";
-import QuizTopic from "../QuizTopic/QuizTopic";
+import Cards from "../Cards/Cards";
 import './Home.css'
 
 const Home = () => {
@@ -14,15 +14,9 @@ const Home = () => {
         <img className="headerImg" src={headerImg} alt="" />
       </div>
         <h1 className="headertitle text-3xl px-5 uppercase mt-3 font-semibold text-indigo-500">First rule of programming - If it works then don't touch it</h1>
-    
-    <div className="allPost grid lg:grid-cols-2 gap-3 px-5">
-        {
-            quizTopics.map(quizTopic => <QuizTopic 
-                key={quizTopic.id}
-                quizTopic={quizTopic}
-                ></QuizTopic>)
-        }
-    </div>
+
+      <Cards></Cards>
+
     </div>
   );
 };
