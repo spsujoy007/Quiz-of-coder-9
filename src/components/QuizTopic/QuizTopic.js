@@ -13,7 +13,7 @@ const QuizTopic = ({quizTopic}) => {
             <div className='bg-white flex flex-col align-middle justify-center'>
                 <h2 className='text-3xl uppercase text-indigo-500'>{name}</h2>
                 <p className='uppercase mt-3'>Take this quiz and give answer like a hero</p>
-                <Link to={`/topics/${id}`} className='bg-indigo-500 p-2 rounded-lg text-white font-bold hover:bg-indigo-400 text-center'>Take quiz</Link>
+                <Link to={`/topics/${id}`} className='cursor-pointer bg-indigo-500 p-2 rounded-lg text-white font-bold hover:bg-indigo-400 text-center'>Take quiz</Link>
             </div>
         </div>
     );
