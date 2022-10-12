@@ -15,7 +15,7 @@ const Home = () => {
       </div>
         <h1 className="headertitle text-3xl px-5 uppercase mt-3 font-semibold text-indigo-500">First rule of programming - If it works then don't touch it</h1>
     
-    <div className="allPost grid md:grid-cols-2 gap-3 px-5">
+    <div className="allPost grid lg:grid-cols-2 gap-3 px-5">
         {
             quizTopics.map(quizTopic => <QuizTopic 
                 key={quizTopic.id}

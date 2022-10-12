@@ -1,5 +1,5 @@
 # QUIZ OF CODER
-### Detail about this website
+### Detail about this website : https://quiz-of-coder.netlify.app/
 --------------------------------------------
 
 ## Used API's from Programming hero
@@ -13,6 +13,7 @@
 4. Rechart
 
 # About site
-"This is a quiz site for all programmers. It's help you to improve your coding challenges. This is make for fun. [quiz-of-coder]". This site is fully responsible for all devices. It's a user friendly website. This site is make by [sujoy_paul] - email: sujoypaul728@gmail.com
+"This is a quiz site for all programmers. It's help you to improve your coding challenges. This is make for fun. [quiz-of-coder]". This site is fully responsible for all devices. It's a user friendly website. 
+#### This site is make by "SUJOY PAUL" - Email: sujoypaul728@gmail.com
 
 ![Learning Programming with full focus-](https://github.githubassets.com/images/modules/open_graph/github-octocat.png)
