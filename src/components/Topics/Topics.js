@@ -10,7 +10,7 @@ const Topics = () => {
     const singleQustions = questions;
     // console.log(singleQustions)
     return (
-        <div className='px-20'>
+        <div className='md:px-20 px-3'>
             <div>
                 <h1 className='text-4xl text-center uppercase my-3 font-semibold'>Quiz for - <span className='text-indigo-500'>{name}</span></h1>
                 <h2 className='text-center text-2xl'>Total questions ( {total} ) </h2>

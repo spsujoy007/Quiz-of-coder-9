@@ -9,13 +9,13 @@ const Home = () => {
     console.log(quizTopics)
 
   return (
-    <div className="header px-20">
+    <div className="header md:px-20 ">
       <div className="headerThumnail">
         <img className="headerImg" src={headerImg} alt="" />
       </div>
-        <h1 className="headertitle text-3xl uppercase mt-3 font-semibold text-indigo-500">First rule of programming - If it works then don't touch it</h1>
+        <h1 className="headertitle text-3xl px-5 uppercase mt-3 font-semibold text-indigo-500">First rule of programming - If it works then don't touch it</h1>
     
-    <div className="allPost grid md:grid-cols-2 gap-3">
+    <div className="allPost grid md:grid-cols-2 gap-3 px-5">
         {
             quizTopics.map(quizTopic => <QuizTopic 
                 key={quizTopic.id}

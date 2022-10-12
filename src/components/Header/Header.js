@@ -4,8 +4,8 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className=" bg-indigo-400">
-      <nav className="md:flex justify-between px-20 py-3">
+    <div className="bg-indigo-400">
+      <nav className="md:flex justify-between md:px-20 px-5 py-3">
         <div>
           <h1 className="text-4xl text-white uppercase">Quiz of Coder</h1>
         </div>
